@@ -3,6 +3,8 @@
 Se desarrollará un sistema para generar referencias
 
 ## LANDING PAGE
+    
+    1.- Se desarrollará una Landing OnePage con temática que Scrollpy por secciones.
 
 ## MODO REFERIDOS
 

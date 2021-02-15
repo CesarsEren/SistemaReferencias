@@ -1,1092 +1,897 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-
-    <!-- Basic Page Needs
-================================================== -->
-    <title>Hireo</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home One || JobHere</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS
-================================================== -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/colors/blue.css">
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- All css files are included here
+        ============================================ -->
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- This core.css file contents all plugins css file
+        ============================================ -->
+    <!-- Nice select css
+        ============================================ -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- This core.css file contents all plugins css file
+        ============================================ -->
+    <link rel="stylesheet" href="css/core.css">
+
+    <!-- Theme shortcodes/elements style
+        ============================================ -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+
+    <!--  Theme main style
+        ============================================ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Color CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/plugins/color.css">
+
+    <!-- Responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header Container
-================================================== -->
-        <header id="header-container" class="fullwidth">
-
-            <!-- Header -->
-            
-            <%- include('partial/header'); %>
-
-            <!-- Header / End -->
-
+    <!--Main Wrapper Start-->
+    <div class="as-mainwrapper">
+        <!--Header Area Start-->
+        <header id="sticky-header" class="header-area">
+            <!-- Header Top Start -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="header-top-list">
+                            <ul class="top-contact-list">
+                                <li><a href="#">Call Us: 011 222 3333</a></li>
+                                <li><a href="#">Email: youremail@example.com</a></li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="#"><i class="zmdi zmdi-rss"></i></a>
+                                <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                                <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Top Start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="logo"><a href="index.html"><img src="images/logo/logo.png" alt="JobHere"></a></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-9">
+                        <div class="pull-right header-menu">
+                            <nav id="primary-menu">
+                                <ul class="main-menu text-right">
+                                    <li><a href="index.html">Home</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home Version One</a></li>
+                                            <li><a href="index-2.html">Home Version Two</a></li>
+                                            <li><a href="index-3.html">Home Box Layout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="job-board.html">Jobs</a>
+                                        <ul class="dropdown">
+                                            <li><a href="single-job-post.html">Single Job</a></li>
+                                            <li><a href="job-details.html">Job Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="job-board.html">Job Board</a></li>
+                                            <li><a href="single-job-post.html">Single Job</a></li>
+                                            <li><a href="job-details.html">Job Details</a></li>
+                                            <li><a href="candidates.html">Candidates</a></li>
+                                            <li><a href="resume.html">Resume</a></li>
+                                            <li><a href="blog.html">Blog Page</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog.html">Blog</a>
+                                        <ul class="dropdown">
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="login-btn">
+                                <a class="modal-view button" href="#" data-toggle="modal"
+                                    data-target="#register">Register</a>
+                                <a class="modal-view button" href="#" data-toggle="modal"
+                                    data-target="#productModal">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul>
+                                        <li><a href="index.html">HOME</a>
+                                            <ul>
+                                                <li><a href="index.html">Home Version One</a></li>
+                                                <li><a href="index-2.html">Home Version Two</a></li>
+                                                <li><a href="index-3.html">Home Box Layout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="job-board.html">Job</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="single-job-post.html">Single Job</a></li>
+                                                <li><a href="job-details.html">Job Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#">Page</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="job-board.html">Job Board</a></li>
+                                                <li><a href="single-job-post.html">Single Job</a></li>
+                                                <li><a href="job-details.html">Job Details</a></li>
+                                                <li><a href="candidates.html">Candidates</a></li>
+                                                <li><a href="resume.html">Resume</a></li>
+                                                <li><a href="blog.html">Blog Page</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area end -->
         </header>
-        <div class="clearfix"></div>
-        <!-- Header Container / End -->
-
-
-
-        <!-- Intro Banner
-================================================== -->
-        <!-- add class "disable-gradient" to enable consistent background overlay -->
-        <div class="intro-banner" data-background-image="images/home-background.jpg">
+        <!-- End of Header Area -->
+        <!-- Search Form Start -->
+        <div class="search-job-area bg-5">
             <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 ml-auto mr-auto">
+                        <div class="job-search-content text-center">
+                            <h4>Nuestro propósito es ayudarte a encontrar el tuyo.</h4>
+                            <h2>find job our website</h2>
+                            <form action="#" method="post">
+                                <div class="form-container">
+                                    <div class="box-select">
+                                        <div class="select">
+                                            <select name="category">
+                                                <option>Keywords</option>
+                                                <option>Finance</option>
+                                                <option>Accountant</option>
+                                                <option>Enginner</option>
+                                                <option>Programmer</option>
+                                                <option>Developer</option>
+                                            </select>
+                                        </div>
+                                        <div class="select">
+                                            <select name="date">
+                                                <option>All Regions</option>
+                                                <option>Dhaka</option>
+                                                <option>Shylet</option>
+                                                <option>Khulna</option>
+                                                <option>Barishal</option>
+                                                <option>Chittagong</option>
+                                            </select>
+                                        </div>
+                                        <div class="select">
+                                            <select name="date">
+                                                <option>Category</option>
+                                                <option>Web Design</option>
+                                                <option>Designing</option>
+                                                <option>Development</option>
+                                                <option>Programming</option>
+                                                <option>Developing</option>
+                                            </select>
+                                        </div>
+                                        <div class="select">
+                                            <button type="button">Search</button>
+                                        </div>
+                                    </div>
 
-                <!-- Intro Headline -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Form End -->
+
+        <!--Start of Blog Area-->
+        <div class="blog-area pt-130 pb-110 pt-sm-60 pb-sm-40">
+            <div class="container">
+                <!-- Section Title Start -->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="banner-headline">
-                            <h3>
-                                <strong>Hire experts or be hired for any job, any time.</strong>
-                                <br>
-                                <span>Thousands of small businesses use <strong class="color">Hireo</strong> to turn
-                                    their ideas into reality.</span>
-                            </h3>
+                        <div class="section-title text-center ">
+                            <h2>Our Blog</h2>
+                            <p>Lorem ipsum dolor sit amet, contetur adipisil elit sed do</p>
                         </div>
                     </div>
                 </div>
+                <!-- Section Title End -->
+                <div class="blog-carousel carousel-style-two">
+                    <!-- Single Item Start -->
+                    <div class="single-blog hover-effect">
+                        <div class="blog-image box-hover">
+                            <a href="#" class="block">
+                                <img src="images/blog/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Standard blog post.</a></h4>
+                            <!--div class="blog-post-info">
+                                <span>Feb 13.</span>
+                                <span>ADMIN NAME</span>
+                                <span>4 comments</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adiicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolor magna aliqua. Ut enim</p-->
+                        </div>
+                    </div>
+                    <!-- Single Item End -->
+                    <!-- Single Item Start -->
+                    <div class="single-blog hover-effect">
+                        <div class="blog-image box-hover">
+                            <a href="#" class="block">
+                                <img src="images/blog/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Standard blog post.</a></h4>
+                            <!--div class="blog-post-info">
+                                <span>Feb 13.</span>
+                                <span>ADMIN NAME</span>
+                                <span>4 comments</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adiicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolor magna aliqua. Ut enim</p-->
+                        </div>
+                    </div>
+                    <!-- Single Item End -->
+                    <!-- Single Item Start -->
+                    <div class="single-blog hover-effect">
+                        <div class="blog-image box-hover">
+                            <a href="#" class="block">
+                                <img src="images/blog/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Standard blog post.</a></h4>
+                            <!--div class="blog-post-info">
+                                <span>Feb 13.</span>
+                                <span>ADMIN NAME</span>
+                                <span>4 comments</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adiicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolor magna aliqua. Ut enim</p-->
+                        </div>
+                    </div>
+                    <!-- Single Item End -->
+                    <!-- Single Item Start -->
+                    <div class="single-blog hover-effect">
+                        <div class="blog-image box-hover">
+                            <a href="#" class="block">
+                                <img src="images/blog/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Standard blog post.</a></h4>
+                            <div class="blog-post-info">
+                                <span>Feb 13.</span>
+                                <span>ADMIN NAME</span>
+                                <span>4 comments</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adiicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolor magna aliqua. Ut enim</p>
+                        </div>
+                    </div>
+                    <!-- Single Item End -->
+                    <!-- Single Item Start -->
+                    <div class="single-blog hover-effect">
+                        <div class="blog-image box-hover">
+                            <a href="#" class="block">
+                                <img src="images/blog/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Standard blog post.</a></h4>
+                            <div class="blog-post-info">
+                                <span>Feb 13.</span>
+                                <span>ADMIN NAME</span>
+                                <span>4 comments</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adiicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolor magna aliqua. Ut enim</p>
+                        </div>
+                    </div>
+                    <!-- Single Item End -->
+                    <!-- Single Item Start -->
+                    <div class="single-blog hover-effect">
+                        <div class="blog-image box-hover">
+                            <a href="#" class="block">
+                                <img src="images/blog/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Standard blog post.</a></h4>
+                            <div class="blog-post-info">
+                                <span>Feb 13.</span>
+                                <span>ADMIN NAME</span>
+                                <span>4 comments</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adiicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolor magna aliqua. Ut enim</p>
+                        </div>
+                    </div>
+                    <!-- Single Item End -->
+                </div>
+            </div>
+        </div>
+        <!--End of Blog Area-->
 
-                <!-- Search Bar -->
+        <!-- Working Aera Start -->
+        <div class="woring-area pt-130 pb-100 pt-sm-60 pb-sm-30">
+            <div class="container">
+                <!-- Section Title Start -->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="intro-banner-search-form margin-top-95">
-
-                            <!-- Search Field -->
-                            <div class="intro-search-field with-autocomplete">
-                                <label for="autocomplete-input" class="field-title ripple-effect">Where?</label>
-                                <div class="input-with-icon">
-                                    <input id="autocomplete-input" type="text" placeholder="Online Job">
-                                    <i class="icon-material-outline-location-on"></i>
-                                </div>
-                            </div>
-
-                            <!-- Search Field -->
-                            <div class="intro-search-field">
-                                <label for="intro-keywords" class="field-title ripple-effect">What job you want?</label>
-                                <input id="intro-keywords" type="text" placeholder="Job Title or Keywords">
-                            </div>
-
-                            <!-- Button -->
-                            <div class="intro-search-button">
-                                <button class="button ripple-effect"
-                                    onclick="window.location.href='jobs-list-layout-full-page-map.html'">Search</button>
-                            </div>
+                        <div class="section-title text-center ">
+                            <h2>How It Works</h2>
+                            <p>Lorem ipsum dolor sit amet, contetur adipisil elit sed do</p>
                         </div>
                     </div>
                 </div>
+                <!-- Section Title End -->
+                <div class="row work-shap">
+                    <div class="col-md-4">
+                        <div class="work-item">
+                            <div class="img-icon">
+                                <img src="images/icons/wrk1.png" alt="">
+                            </div>
+                            <h5>Create An Account</h5>
+                            <p>Lorem ipsum dolor sit amet, contetur adipisil elit, sed do eiusmod tempor incididunt ut
+                                lab et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-item">
+                            <div class="img-icon">
+                                <img src="images/icons/wrk2.png" alt="">
+                            </div>
+                            <h5>Search Desired Job</h5>
+                            <p>Lorem ipsum dolor sit amet, contetur adipisil elit, sed do eiusmod tempor incididunt ut
+                                lab et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-item">
+                            <div class="img-icon">
+                                <img src="images/icons/wrk3.png" alt="">
+                            </div>
+                            <h5>Send Your Resume</h5>
+                            <p>Lorem ipsum dolor sit amet, contetur adipisil elit, sed do eiusmod tempor incididunt ut
+                                lab et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Working Aera End -->
+        <!--Start of Fun Factor Area-->
+        <div class="fun-factor-area bg-1 text-center ptb-100 pt-sm-60 pb-sm-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="single-fun-factor">
+                            <h1><span class="counter">340</span> +</h1>
+                            <h3>Customers</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-fun-factor">
+                            <h1><span class="counter">450</span> +</h1>
+                            <h3>members</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-fun-factor">
+                            <h1><span class="counter">220</span></h1>
+                            <h3>Resume</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-fun-factor">
+                            <h1><span class="counter">299</span></h1>
+                            <h3>Company</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Fun Factor Area-->
 
-                <!-- Stats -->
+         <!--Start of Job Post Area-->
+         <div class="job-post-area pt-100 pb-100 pb-sm-35">
+            <div class="container">
+                <!-- Section Title Start -->
                 <div class="row">
                     <div class="col-md-12">
-                        <ul class="intro-stats margin-top-45 hide-under-992px">
-                            <li>
-                                <strong class="counter">1,586</strong>
-                                <span>Jobs Posted</span>
-                            </li>
-                            <li>
-                                <strong class="counter">3,543</strong>
-                                <span>Tasks Posted</span>
-                            </li>
-                            <li>
-                                <strong class="counter">1,232</strong>
-                                <span>Freelancers</span>
-                            </li>
-                        </ul>
+                        <div class="section-title text-center ">
+                            <h2>Aumenta tu empleabilidad</h2>
+                            <!--p>Lorem ipsum dolor sit amet, contetur adipisil elit sed do</p-->
+                        </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-
-
-        <!-- Content
-================================================== -->
-        <!-- Category Boxes -->
-        <div class="section margin-top-65">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-
-                        <div class="section-headline centered margin-bottom-15">
-                            <h3>Popular Job Categories</h3>
+                <!-- Section Title End -->
+                <div class="all-job-post">
+                    <!-- Nav tabs -->
+                    <div class="post-tab nav">
+                        <a class="nav-link" data-toggle="tab" href="#featured">FEATURED JOBS</a>
+                        <a class="nav-link  active" data-toggle="tab" href="#recent_job">RECENT JOBS</a>
+                        <a class="nav-link" data-toggle="tab" href="#featured">PART TIME</a>
+                        <a class="nav-link" data-toggle="tab" href="#recent_job">FULL TIME</a>
+                    </div>                            
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="featured">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Online English Teachers</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Teacher</p>
+                                            <p>Date : 14.05.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Hiring Web designer & Developer</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Designer</p>
+                                            <p>Date : 12.06.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>SEO Analiyst & Reviewer</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Designer</p>
+                                            <p>Date : 11.02.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Content Writer and Speaker</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Education</p>
+                                            <p>Date : 14.09.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Hiring Online English Teachers</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Designer</p>
+                                            <p>Date : 14.09.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Social Media Expert</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Media</p>
+                                            <p>Date : 14.09.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
+                                </div>
+                            </div>
                         </div>
-
-                        <!-- Category Boxes Container -->
-                        <div class="categories-container">
-
-                            <!-- Category Box -->
-                            <a href="jobs-grid-layout-full-page.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-file-code-o"></i>
+                        <div class="tab-pane" id="recent_job">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Font-End Develper</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Web</p>
+                                            <p>Date : 18.05.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
                                 </div>
-                                <div class="category-box-counter">612</div>
-                                <div class="category-box-content">
-                                    <h3>Web & Software Dev</h3>
-                                    <p>Software Engineer, Web / Mobile Developer & More</p>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Senior Software Engineer</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Engineering</p>
+                                            <p>Date : 11.05.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
                                 </div>
-                            </a>
-
-                            <!-- Category Box -->
-                            <a href="jobs-list-layout-full-page-map.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-cloud-upload"></i>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Platform/Backend Engineer</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Engineering</p>
+                                            <p>Date : 09.02.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
                                 </div>
-                                <div class="category-box-counter">113</div>
-                                <div class="category-box-content">
-                                    <h3>Data Science & Analitycs</h3>
-                                    <p>Data Specialist / Scientist, Data Analyst & More</p>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Social media Specialist</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Media</p>
+                                            <p>Date : 01.10.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
                                 </div>
-                            </a>
-
-                            <!-- Category Box -->
-                            <a href="jobs-list-layout-full-page-map.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-suitcase"></i>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Platform/Backend Engineer</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Engineering</p>
+                                            <p>Date : 09.02.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
                                 </div>
-                                <div class="category-box-counter">186</div>
-                                <div class="category-box-content">
-                                    <h3>Accounting & Consulting</h3>
-                                    <p>Auditor, Accountant, Fnancial Analyst & More</p>
+                                <div class="col-md-6">
+                                    <div class="single-job-post">
+                                         <div class="img-icon">
+                                            <img src="images/company-logo/1.png" alt="">
+                                        </div>
+                                        <div class="address">
+                                            <h6>Hiring Online English Teachers</h6>
+                                            <p>Publisher : Company Name</p>
+                                            <p>In : Designer</p>
+                                            <p>Date : 14.09.2018</p>
+                                            <p>Location : Dhaka</p>
+                                        </div>
+                                        <div class="button-box"><a href="#" class="button button-black">APPLY NOW</a></div>
+                                        
+                                    </div>                                    
                                 </div>
-                            </a>
-
-                            <!-- Category Box -->
-                            <a href="jobs-list-layout-1.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-pencil"></i>
-                                </div>
-                                <div class="category-box-counter">298</div>
-                                <div class="category-box-content">
-                                    <h3>Writing & Translations</h3>
-                                    <p>Copywriter, Creative Writer, Translator & More</p>
-                                </div>
-                            </a>
-
-                            <!-- Category Box -->
-                            <a href="jobs-list-layout-2.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-pie-chart"></i>
-                                </div>
-                                <div class="category-box-counter">549</div>
-                                <div class="category-box-content">
-                                    <h3>Sales & Marketing</h3>
-                                    <p>Brand Manager, Marketing Coordinator & More</p>
-                                </div>
-                            </a>
-
-                            <!-- Category Box -->
-                            <a href="jobs-list-layout-1.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-image"></i>
-                                </div>
-                                <div class="category-box-counter">873</div>
-                                <div class="category-box-content">
-                                    <h3>Graphics & Design</h3>
-                                    <p>Creative Director, Web Designer & More</p>
-                                </div>
-                            </a>
-
-                            <!-- Category Box -->
-                            <a href="jobs-list-layout-2.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-bullhorn"></i>
-                                </div>
-                                <div class="category-box-counter">125</div>
-                                <div class="category-box-content">
-                                    <h3>Digital Marketing</h3>
-                                    <p>Darketing Analyst, Social Profile Admin & More</p>
-                                </div>
-                            </a>
-
-                            <!-- Category Box -->
-                            <a href="jobs-grid-layout-full-page.html" class="category-box">
-                                <div class="category-box-icon">
-                                    <i class="icon-line-awesome-graduation-cap"></i>
-                                </div>
-                                <div class="category-box-counter">445</div>
-                                <div class="category-box-content">
-                                    <h3>Education & Training</h3>
-                                    <p>Advisor, Coach, Education Coordinator & More</p>
-                                </div>
-                            </a>
-
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Category Boxes / End -->
-
-
-        <!-- Features Jobs -->
-        <div class="section gray margin-top-45 padding-top-65 padding-bottom-75">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-
-                        <!-- Section Headline -->
-                        <div class="section-headline margin-top-0 margin-bottom-35">
-                            <h3>Featured Jobs</h3>
-                            <a href="jobs-list-layout-full-page-map.html" class="headline-link">Browse All Jobs</a>
-                        </div>
-
-                        <!-- Jobs Container -->
-                        <div class="listings-container compact-list-layout margin-top-35">
-
-                            <!-- Job Listing -->
-                            <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                                <!-- Job Listing Details -->
-                                <div class="job-listing-details">
-
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="images/company-logo-01.png" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="job-listing-description">
-                                        <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
-
-                                        <!-- Job Listing Footer -->
-                                        <div class="job-listing-footer">
-                                            <ul>
-                                                <li><i class="icon-material-outline-business"></i> Hexagon <div
-                                                        class="verified-badge" title="Verified Employer"
-                                                        data-tippy-placement="top"></div>
-                                                </li>
-                                                <li><i class="icon-material-outline-location-on"></i> San Francissco
-                                                </li>
-                                                <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                                <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Apply Button -->
-                                    <span class="list-apply-button ripple-effect">Apply Now</span>
-                                </div>
-                            </a>
-
-
-                            <!-- Job Listing -->
-                            <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                                <!-- Job Listing Details -->
-                                <div class="job-listing-details">
-
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="images/company-logo-05.png" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="job-listing-description">
-                                        <h3 class="job-listing-title">Competition Law Officer</h3>
-
-                                        <!-- Job Listing Footer -->
-                                        <div class="job-listing-footer">
-                                            <ul>
-                                                <li><i class="icon-material-outline-business"></i> Laxo</li>
-                                                <li><i class="icon-material-outline-location-on"></i> San Francissco
-                                                </li>
-                                                <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                                <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Apply Button -->
-                                    <span class="list-apply-button ripple-effect">Apply Now</span>
-                                </div>
-                            </a>
-                            <!-- Job Listing -->
-                            <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                                <!-- Job Listing Details -->
-                                <div class="job-listing-details">
-
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="images/company-logo-02.png" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="job-listing-description">
-                                        <h3 class="job-listing-title">Barista and Cashier</h3>
-
-                                        <!-- Job Listing Footer -->
-                                        <div class="job-listing-footer">
-                                            <ul>
-                                                <li><i class="icon-material-outline-business"></i> Coffee</li>
-                                                <li><i class="icon-material-outline-location-on"></i> San Francissco
-                                                </li>
-                                                <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                                <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Apply Button -->
-                                    <span class="list-apply-button ripple-effect">Apply Now</span>
-                                </div>
-                            </a>
-
-
-                            <!-- Job Listing -->
-                            <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                                <!-- Job Listing Details -->
-                                <div class="job-listing-details">
-
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="images/company-logo-03.png" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="job-listing-description">
-                                        <h3 class="job-listing-title">Restaurant General Manager</h3>
-
-                                        <!-- Job Listing Footer -->
-                                        <div class="job-listing-footer">
-                                            <ul>
-                                                <li><i class="icon-material-outline-business"></i> King <div
-                                                        class="verified-badge" title="Verified Employer"
-                                                        data-tippy-placement="top"></div>
-                                                </li>
-                                                <li><i class="icon-material-outline-location-on"></i> San Francissco
-                                                </li>
-                                                <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                                <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Apply Button -->
-                                    <span class="list-apply-button ripple-effect">Apply Now</span>
-                                </div>
-                            </a>
-
-                            <!-- Job Listing -->
-                            <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                                <!-- Job Listing Details -->
-                                <div class="job-listing-details">
-
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="images/company-logo-05.png" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="job-listing-description">
-                                        <h3 class="job-listing-title">International Marketing Coordinator</h3>
-
-                                        <!-- Job Listing Footer -->
-                                        <div class="job-listing-footer">
-                                            <ul>
-                                                <li><i class="icon-material-outline-business"></i> Skyist</li>
-                                                <li><i class="icon-material-outline-location-on"></i> San Francissco
-                                                </li>
-                                                <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                                <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Apply Button -->
-                                    <span class="list-apply-button ripple-effect">Apply Now</span>
-                                </div>
-                            </a>
-
-                        </div>
-                        <!-- Jobs Container / End -->
-
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Featured Jobs / End -->
-
-
-        <!-- Features Cities -->
-        <div class="section margin-top-65 margin-bottom-65">
-            <div class="container">
-                <div class="row">
-
-                    <!-- Section Headline -->
-                    <div class="col-xl-12">
-                        <div class="section-headline centered margin-top-0 margin-bottom-45">
-                            <h3>Featured Cities</h3>
+        <!-- End of Job Post Area -->
+        <!--Start of Footer Widget-area-->
+        <footer class="footer-area">
+            <!--div class="footer-top bg-opacity-dark-blue-90 ptb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pb-sm-30">
+                            <div class="subscribe-text">
+                                <h3>Subscribe To Our Newsletter</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="subscribe-form">
+                                <input type="email" name="email" id="eamil" placeholder="Enter Your Email.....">
+                                <button>Submit</button>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-3 col-md-6">
-                        <!-- Photo Box -->
-                        <a href="jobs-list-layout-1.html" class="photo-box"
-                            data-background-image="images/featured-city-01.jpg">
-                            <div class="photo-box-content">
-                                <h3>San Francisco</h3>
-                                <span>376 Jobs</span>
+                </div>
+            </div-->
+            <div class="footer-widget-area ptb-80 pb-sm-30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-5">
+                            <div class="single-footer-widget">
+                                <h3 class="text-white mb-26">GET IN TOUCH</h3>
+                                <span class="text-white mb-9"><i class="fa fa-phone"></i>+012 345 678 102 </span>
+                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>info@example.com</span>
+                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.example.com</span>
+                                <span class="text-white mb-9"><i class="fa fa-map-marker"></i>ur address goes
+                                    here,street.</span>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-3 col-md-6">
-                        <!-- Photo Box -->
-                        <a href="jobs-list-layout-full-page-map.html" class="photo-box"
-                            data-background-image="images/featured-city-02.jpg">
-                            <div class="photo-box-content">
-                                <h3>New York</h3>
-                                <span>645 Jobs</span>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="single-footer-widget">
+                                <h3 class="text-white mb-21">By Regions</h3>
+                                <ul class="footer-list">
+                                    <li><a href="#">Sudia Region</a></li>
+                                    <li><a href="#">North America</a></li>
+                                    <li><a href="#">Africa</a></li>
+                                    <li><a href="#">China</a></li>
+                                    <li><a href="#">Brazil</a></li>
+                                </ul>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-3 col-md-6">
-                        <!-- Photo Box -->
-                        <a href="jobs-grid-layout-full-page.html" class="photo-box"
-                            data-background-image="images/featured-city-03.jpg">
-                            <div class="photo-box-content">
-                                <h3>Los Angeles</h3>
-                                <span>832 Jobs</span>
+                        </div>
+                        <div class="col-lg-3 d-md-none d-lg-block">
+                            <div class="single-footer-widget">
+                                <h3 class="text-white mb-21">Job Types</h3>
+                                <ul class="footer-list">
+                                    <li><a href="#">Full Time Job</a></li>
+                                    <li><a href="#">Part Time Job</a></li>
+                                    <li><a href="#">Temporary Job</a></li>
+                                    <li><a href="#">Internship Job</a></li>
+                                    <li><a href="#">Developer</a></li>
+                                </ul>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xl-3 col-md-6">
-                        <!-- Photo Box -->
-                        <a href="jobs-list-layout-2.html" class="photo-box"
-                            data-background-image="images/featured-city-04.jpg">
-                            <div class="photo-box-content">
-                                <h3>Miami</h3>
-                                <span>513 Jobs</span>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="single-footer-widget">
+                                <h3 class="text-white mb-21">Keyword By Jobs</h3>
+                                <ul class="footer-list">
+                                    <li><a href="#">Graphic Designer</a></li>
+                                    <li><a href="#">HTML Designer</a></li>
+                                    <li><a href="#">WP Developer</a></li>
+                                    <li><a href="#">Joomla Developer</a></li>
+                                    <li><a href="#">Content Writer</a></li>
+                                </ul>
                             </div>
-                        </a>
+                        </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-        <!-- Features Cities / End -->
-
-
-        <!-- Highest Rated Freelancers -->
-        <div class="section gray padding-top-65 padding-bottom-70 full-width-carousel-fix">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-xl-12">
-                        <!-- Section Headline -->
-                        <div class="section-headline margin-top-0 margin-bottom-25">
-                            <h3>Highest Rated Freelancers</h3>
-                            <a href="freelancers-grid-layout.html" class="headline-link">Browse All Freelancers</a>
+            <!--End of Footer Widget-area-->
+            <!-- Start of Footer area -->
+            <div class="copyright-area text-center ptb-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-text">
+                                <span class="text-white block"> Copyright&copy; <a href="#">Jobhere</a>.All right
+                                    reserved.</span>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-12">
-                        <div class="default-slick-carousel freelancers-container freelancers-grid-layout">
-
-                            <!--Freelancer -->
-                            <div class="freelancer">
-
-                                <!-- Overview -->
-                                <div class="freelancer-overview">
-                                    <div class="freelancer-overview-inner">
-
-                                        <!-- Bookmark Icon -->
-                                        <span class="bookmark-icon"></span>
-
-                                        <!-- Avatar -->
-                                        <div class="freelancer-avatar">
-                                            <div class="verified-badge"></div>
-                                            <a href="single-freelancer-profile.html"><img
-                                                    src="images/user-avatar-big-01.jpg" alt=""></a>
-                                        </div>
-
-                                        <!-- Name -->
-                                        <div class="freelancer-name">
-                                            <h4><a href="single-freelancer-profile.html">Tom Smith <img class="flag"
-                                                        src="images/flags/gb.svg" alt="" title="United Kingdom"
-                                                        data-tippy-placement="top"></a></h4>
-                                            <span>UI/UX Designer</span>
-                                        </div>
-
-                                        <!-- Rating -->
-                                        <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="5.0"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Details -->
-                                <div class="freelancer-details">
-                                    <div class="freelancer-details-list">
-                                        <ul>
-                                            <li>Location <strong><i class="icon-material-outline-location-on"></i>
-                                                    London</strong></li>
-                                            <li>Rate <strong>$60 / hr</strong></li>
-                                            <li>Job Success <strong>95%</strong></li>
-                                        </ul>
-                                    </div>
-                                    <a href="single-freelancer-profile.html"
-                                        class="button button-sliding-icon ripple-effect">View Profile <i
-                                            class="icon-material-outline-arrow-right-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Freelancer / End -->
-
-                            <!--Freelancer -->
-                            <div class="freelancer">
-
-                                <!-- Overview -->
-                                <div class="freelancer-overview">
-                                    <div class="freelancer-overview-inner">
-
-                                        <!-- Bookmark Icon -->
-                                        <span class="bookmark-icon"></span>
-
-                                        <!-- Avatar -->
-                                        <div class="freelancer-avatar">
-                                            <div class="verified-badge"></div>
-                                            <a href="single-freelancer-profile.html"><img
-                                                    src="images/user-avatar-big-02.jpg" alt=""></a>
-                                        </div>
-
-                                        <!-- Name -->
-                                        <div class="freelancer-name">
-                                            <h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg"
-                                                        alt="" title="Germany" data-tippy-placement="top"></a></h4>
-                                            <span>iOS Expert + Node Dev</span>
-                                        </div>
-
-                                        <!-- Rating -->
-                                        <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="5.0"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Details -->
-                                <div class="freelancer-details">
-                                    <div class="freelancer-details-list">
-                                        <ul>
-                                            <li>Location <strong><i class="icon-material-outline-location-on"></i>
-                                                    Berlin</strong></li>
-                                            <li>Rate <strong>$40 / hr</strong></li>
-                                            <li>Job Success <strong>88%</strong></li>
-                                        </ul>
-                                    </div>
-                                    <a href="single-freelancer-profile.html"
-                                        class="button button-sliding-icon ripple-effect">View Profile <i
-                                            class="icon-material-outline-arrow-right-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Freelancer / End -->
-
-                            <!--Freelancer -->
-                            <div class="freelancer">
-
-                                <!-- Overview -->
-                                <div class="freelancer-overview">
-                                    <div class="freelancer-overview-inner">
-                                        <!-- Bookmark Icon -->
-                                        <span class="bookmark-icon"></span>
-
-                                        <!-- Avatar -->
-                                        <div class="freelancer-avatar">
-                                            <a href="single-freelancer-profile.html"><img
-                                                    src="images/user-avatar-placeholder.png" alt=""></a>
-                                        </div>
-
-                                        <!-- Name -->
-                                        <div class="freelancer-name">
-                                            <h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg"
-                                                        alt="" title="Poland" data-tippy-placement="top"></a></h4>
-                                            <span>Front-End Developer</span>
-                                        </div>
-
-                                        <!-- Rating -->
-                                        <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="4.9"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Details -->
-                                <div class="freelancer-details">
-                                    <div class="freelancer-details-list">
-                                        <ul>
-                                            <li>Location <strong><i class="icon-material-outline-location-on"></i>
-                                                    Warsaw</strong></li>
-                                            <li>Rate <strong>$50 / hr</strong></li>
-                                            <li>Job Success <strong>100%</strong></li>
-                                        </ul>
-                                    </div>
-                                    <a href="single-freelancer-profile.html"
-                                        class="button button-sliding-icon ripple-effect">View Profile <i
-                                            class="icon-material-outline-arrow-right-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Freelancer / End -->
-
-                            <!--Freelancer -->
-                            <div class="freelancer">
-
-                                <!-- Overview -->
-                                <div class="freelancer-overview">
-                                    <div class="freelancer-overview-inner">
-                                        <!-- Bookmark Icon -->
-                                        <span class="bookmark-icon"></span>
-
-                                        <!-- Avatar -->
-                                        <div class="freelancer-avatar">
-                                            <div class="verified-badge"></div>
-                                            <a href="single-freelancer-profile.html"><img
-                                                    src="images/user-avatar-big-03.jpg" alt=""></a>
-                                        </div>
-
-                                        <!-- Name -->
-                                        <div class="freelancer-name">
-                                            <h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg"
-                                                        alt="" title="Australia" data-tippy-placement="top"></a></h4>
-                                            <span>Magento Certified Developer</span>
-                                        </div>
-
-                                        <!-- Rating -->
-                                        <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="5.0"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Details -->
-                                <div class="freelancer-details">
-                                    <div class="freelancer-details-list">
-                                        <ul>
-                                            <li>Location <strong><i class="icon-material-outline-location-on"></i>
-                                                    Brisbane</strong></li>
-                                            <li>Rate <strong>$70 / hr</strong></li>
-                                            <li>Job Success <strong>100%</strong></li>
-                                        </ul>
-                                    </div>
-                                    <a href="single-freelancer-profile.html"
-                                        class="button button-sliding-icon ripple-effect">View Profile <i
-                                            class="icon-material-outline-arrow-right-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Freelancer / End -->
-
-                            <!--Freelancer -->
-                            <div class="freelancer">
-
-                                <!-- Overview -->
-                                <div class="freelancer-overview">
-                                    <div class="freelancer-overview-inner">
-                                        <!-- Bookmark Icon -->
-                                        <span class="bookmark-icon"></span>
-
-                                        <!-- Avatar -->
-                                        <div class="freelancer-avatar">
-                                            <a href="single-freelancer-profile.html"><img
-                                                    src="images/user-avatar-placeholder.png" alt=""></a>
-                                        </div>
-
-                                        <!-- Name -->
-                                        <div class="freelancer-name">
-                                            <h4><a href="#">Sebastiano Piccio <img class="flag"
-                                                        src="images/flags/it.svg" alt="" title="Italy"
-                                                        data-tippy-placement="top"></a></h4>
-                                            <span>Laravel Dev</span>
-                                        </div>
-
-                                        <!-- Rating -->
-                                        <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="4.5"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Details -->
-                                <div class="freelancer-details">
-                                    <div class="freelancer-details-list">
-                                        <ul>
-                                            <li>Location <strong><i class="icon-material-outline-location-on"></i>
-                                                    Milan</strong></li>
-                                            <li>Rate <strong>$80 / hr</strong></li>
-                                            <li>Job Success <strong>89%</strong></li>
-                                        </ul>
-                                    </div>
-                                    <a href="single-freelancer-profile.html"
-                                        class="button button-sliding-icon ripple-effect">View Profile <i
-                                            class="icon-material-outline-arrow-right-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Freelancer / End -->
-
-                            <!--Freelancer -->
-                            <div class="freelancer">
-
-                                <!-- Overview -->
-                                <div class="freelancer-overview">
-                                    <div class="freelancer-overview-inner">
-                                        <!-- Bookmark Icon -->
-                                        <span class="bookmark-icon"></span>
-
-                                        <!-- Avatar -->
-                                        <div class="freelancer-avatar">
-                                            <a href="single-freelancer-profile.html"><img
-                                                    src="images/user-avatar-placeholder.png" alt=""></a>
-                                        </div>
-
-                                        <!-- Name -->
-                                        <div class="freelancer-name">
-                                            <h4><a href="#">Gabriel Lagueux <img class="flag" src="images/flags/fr.svg"
-                                                        alt="" title="France" data-tippy-placement="top"></a></h4>
-                                            <span>WordPress Expert</span>
-                                        </div>
-
-                                        <!-- Rating -->
-                                        <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="5.0"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Details -->
-                                <div class="freelancer-details">
-                                    <div class="freelancer-details-list">
-                                        <ul>
-                                            <li>Location <strong><i class="icon-material-outline-location-on"></i>
-                                                    Paris</strong></li>
-                                            <li>Rate <strong>$50 / hr</strong></li>
-                                            <li>Job Success <strong>100%</strong></li>
-                                        </ul>
-                                    </div>
-                                    <a href="single-freelancer-profile.html"
-                                        class="button button-sliding-icon ripple-effect">View Profile <i
-                                            class="icon-material-outline-arrow-right-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Freelancer / End -->
-
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
-        <!-- Highest Rated Freelancers / End-->
-
-
-        <!-- Membership Plans -->
-        <div class="section padding-top-60 padding-bottom-75">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-xl-12">
-                        <!-- Section Headline -->
-                        <div class="section-headline centered margin-top-0 margin-bottom-35">
-                            <h3>Membership Plans</h3>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xl-12">
-
-                        <!-- Billing Cycle  -->
-                        <div class="billing-cycle-radios margin-bottom-70">
-                            <div class="radio billed-monthly-radio">
-                                <input id="radio-5" name="radio-payment-type" type="radio" checked>
-                                <label for="radio-5"><span class="radio-label"></span> Billed Monthly</label>
-                            </div>
-
-                            <div class="radio billed-yearly-radio">
-                                <input id="radio-6" name="radio-payment-type" type="radio">
-                                <label for="radio-6"><span class="radio-label"></span> Billed Yearly <span
-                                        class="small-label">Save 10%</span></label>
-                            </div>
-                        </div>
-
-                        <!-- Pricing Plans Container -->
-                        <div class="pricing-plans-container">
-
-                            <!-- Plan -->
-                            <div class="pricing-plan">
-                                <h3>Basic Plan</h3>
-                                <p class="margin-top-10">One time fee for one listing or task highlighted in search
-                                    results.</p>
-                                <div class="pricing-plan-label billed-monthly-label"><strong>$19</strong>/ monthly</div>
-                                <div class="pricing-plan-label billed-yearly-label"><strong>$205</strong>/ yearly</div>
-                                <div class="pricing-plan-features">
-                                    <strong>Features of Basic Plan</strong>
-                                    <ul>
-                                        <li>1 Listing</li>
-                                        <li>30 Days Visibility</li>
-                                        <li>Highlighted in Search Results</li>
-                                    </ul>
-                                </div>
-                                <a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
-                            </div>
-
-                            <!-- Plan -->
-                            <div class="pricing-plan recommended">
-                                <div class="recommended-badge">Recommended</div>
-                                <h3>Standard Plan</h3>
-                                <p class="margin-top-10">One time fee for one listing or task highlighted in search
-                                    results.</p>
-                                <div class="pricing-plan-label billed-monthly-label"><strong>$49</strong>/ monthly</div>
-                                <div class="pricing-plan-label billed-yearly-label"><strong>$529</strong>/ yearly</div>
-                                <div class="pricing-plan-features">
-                                    <strong>Features of Standard Plan</strong>
-                                    <ul>
-                                        <li>5 Listings</li>
-                                        <li>60 Days Visibility</li>
-                                        <li>Highlighted in Search Results</li>
-                                    </ul>
-                                </div>
-                                <a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
-                            </div>
-
-                            <!-- Plan -->
-                            <div class="pricing-plan">
-                                <h3>Extended Plan</h3>
-                                <p class="margin-top-10">One time fee for one listing or task highlighted in search
-                                    results.</p>
-                                <div class="pricing-plan-label billed-monthly-label"><strong>$99</strong>/ monthly</div>
-                                <div class="pricing-plan-label billed-yearly-label"><strong>$1069</strong>/ yearly</div>
-                                <div class="pricing-plan-features">
-                                    <strong>Features of Extended Plan</strong>
-                                    <ul>
-                                        <li>Unlimited Listings Listing</li>
-                                        <li>90 Days Visibility</li>
-                                        <li>Highlighted in Search Results</li>
-                                    </ul>
-                                </div>
-                                <a href="pages-checkout-page.html" class="button full-width margin-top-20">Buy Now</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- Membership Plans / End-->
-
-        <!-- Footer
-================================================== -->
-        <div id="footer">
-            <%- include('partial/footer'); %>
-
-        </div>
-        <!-- Footer / End -->
-
+        </footer>
+        <!-- End of Footer area -->
     </div>
-    <!-- Wrapper / End -->
+    <!--End of Main Wrapper Area-->
 
-    <!-- Sign In Popup
-================================================== -->
-    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
-
-        <!--Tabs -->
-        <div class="sign-in-form">
-
-            <ul class="popup-tabs-nav">
-                <li><a href="#login">Ingresar</a></li>
-                <li><a href="#register">Registrar</a></li>
-            </ul>
-
-            <div class="popup-tabs-container">
-
-                <!-- Login -->
-                <div class="popup-tab-content" id="login">
-
-                    <!-- Welcome Text -->
-                    <div class="welcome-text">
-                        <h3>Nos alegra verte de nuevo!</h3>
-                        <span>No tienes una Cuenta? <a href="#" class="register-tab">Registrate!</a></span>
+    <!--Start of Login Form-->
+    <div id="quickview-login">
+        <!-- Modal -->
+        <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
                     </div>
-
-                    <!-- Form -->
-                    <form method="post" id="login-form">
-                        <div class="input-with-icon-left">
-                            <i class="icon-material-baseline-mail-outline"></i>
-                            <input type="text" class="input-text with-border" name="emailaddress" id="emailaddress"
-                                placeholder="Ingrese su correo" required />
+                    <div class="modal-body">
+                        <div class="form-pop-up-content ptb-60 pl-60 pr-60">
+                            <div class="area-title text-center mb-43">
+                                <img src="images/logo/logo.png" alt="jobhere">
+                            </div>
+                            <form method="post" action="#">
+                                <div class="form-box">
+                                    <input type="text" name="username" placeholder="Email" class="mb-14">
+                                    <input type="password" name="pass" placeholder="Password">
+                                </div>
+                                <div class="fix ptb-30">
+                                    <span class="remember pull-left"><input class="p-0 pull-left"
+                                            type="checkbox">Remember Me</span>
+                                    <span class="pull-right"><a href="#">Forget Password?</a></span>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="text-uppercase">Login</button>
+                                </div>
+                            </form>
                         </div>
-
-                        <div class="input-with-icon-left">
-                            <i class="icon-material-outline-lock"></i>
-                            <input type="password" class="input-text with-border" name="password" id="password"
-                                placeholder="Ingrese su contraseña" required />
-                        </div>
-                        <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
-                    </form>
-
-                    <!-- Button -->
-                    <button class="button full-width button-sliding-icon ripple-effect" type="submit"
-                        form="login-form">Ingresar <i class="icon-material-outline-arrow-right-alt"></i></button>
-
-                    <!-- Social Login -->
-                    <div class="social-login-separator"><span>o</span></div>
-                    <div class="social-login-buttons">
-                        <button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Iniciar con
-                            Facebook</button>
-                        <button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Iniciar con
-                            Google+</button>
                     </div>
-
                 </div>
-
-                <!-- Register -->
-                <div class="popup-tab-content" id="register">
-
-                    <!-- Welcome Text -->
-                    <div class="welcome-text">
-                        <h3>Vamos a crear tu cuenta!</h3>
-                    </div>
-
-                    <!-- Account Type -->
-                    <div class="account-type">
-                        <div>
-                            <input type="radio" name="account-type-radio" id="freelancer-radio"
-                                class="account-type-radio" checked />
-                            <label for="freelancer-radio" class="ripple-effect-dark"><i
-                                    class="icon-material-outline-account-circle"></i> Candidato</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="account-type-radio" id="employer-radio"
-                                class="account-type-radio" />
-                            <label for="employer-radio" class="ripple-effect-dark"><i
-                                    class="icon-material-outline-business-center"></i> Reclutador</label>
-                        </div>
-                    </div>
-
-                    <!-- Form -->
-                    <form method="post" id="register-account-form">
-
-                        <select type="text" class="selectpicker">
-                            <option value="">CANDIDATOS</option>
-                            <option value="">FREELANCER</option>
-                            <option value="">OFICIO</option>
-                        </select>
-
-                        <div class="input-with-icon-left">
-                            <i class="icon-material-baseline-mail-outline"></i>
-                            <input type="text" class="input-text with-border" name="emailaddress-register"
-                                id="emailaddress-register" placeholder="Ingrese su correo" required />
-                        </div>
-
-                        <div class="input-with-icon-left" title="Should be at least 8 characters long"
-                            data-tippy-placement="bottom">
-                            <i class="icon-material-outline-lock"></i>
-                            <input type="password" class="input-text with-border" name="password-register"
-                                id="password-register" placeholder="Ingrese su contraseña" required />
-                        </div>
-
-                        <div class="input-with-icon-left">
-                            <i class="icon-material-outline-lock"></i>
-                            <input type="password" class="input-text with-border" name="password-repeat-register"
-                                id="password-repeat-register" placeholder="Repita su contraseña" required />
-                        </div>
-                    </form>
-
-                    <!-- Button -->
-                    <button class="margin-top-10 button full-width button-sliding-icon ripple-effect" type="submit"
-                        form="register-account-form">Registrar <i
-                            class="icon-material-outline-arrow-right-alt"></i></button>
-
-                    <!-- Social Login -->
-                    <div class="social-login-separator"><span>o</span></div>
-                    <div class="social-login-buttons">
-                        <button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Registrarme
-                            con
-                            Facebook</button>
-                        <button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Registrarme
-                            con
-                            Google+</button>
-                    </div>
-
-                </div>
-
             </div>
         </div>
     </div>
-    <!-- Sign In Popup / End -->
+    <!--End of Login Form-->
+    <!--Start of Login Form-->
+    <div id="quickview-register">
+        <!-- Modal -->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-pop-up-content ptb-60 pl-60 pr-60">
+                            <div class="area-title text-center mb-43">
+                                <img src="images/logo/logo.png" alt="jobhere">
+                            </div>
+                            <form method="post" action="#">
+                                <div class="form-box box2">
+                                    <input type="text" name="firstname" placeholder="First Name" class="mb-14">
+                                    <input type="text" name="lastname" placeholder="Last Name">
+                                </div>
+                                <div class="form-box">
+                                    <input type="email" name="emailnew" placeholder="Email" class="mb-14">
+                                    <input type="password" name="pass" placeholder="Password">
+                                </div>
+                                <div class="fix ptb-30">
+                                    <span class="remember pull-left"><input class="p-0 pull-left"
+                                            type="checkbox">Remember Me</span>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="text-uppercase">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Login Form-->
 
-    <!-- Scripts
-================================================== -->
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="/js/mmenu.min.js"></script>
-    <script src="/js/tippy.all.min.js"></script>
-    <script src="/js/simplebar.min.js"></script>
-    <script src="/js/bootstrap-slider.min.js"></script>
-    <script src="/js/bootstrap-select.min.js"></script>
-    <script src="/js/snackbar.js"></script>
-    <script src="/js/clipboard.min.js"></script>
-    <script src="/js/counterup.min.js"></script>
-    <script src="/js/magnific-popup.min.js"></script>
-    <script src="/js/slick.min.js"></script>
-    <script src="/js/custom.js"></script>
 
-    <!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
-    <script>
-        // Snackbar for user status switcher
-        $('#snackbar-user-status label').click(function () {
-            Snackbar.show({
-                text: 'Your status has been changed!',
-                pos: 'bottom-center',
-                showAction: false,
-                actionText: "Dismiss",
-                duration: 3000,
-                textColor: '#fff',
-                backgroundColor: '#383838'
-            });
-        }); 
-    </script>
+    <!-- jquery latest version
+		========================================================= -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
 
+    <!-- Bootstrap framework js
+		========================================================= -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
 
-    <!-- Google Autocomplete -->
-    <script>
-        function initAutocomplete() {
-            var options = {
-                types: ['(cities)'],
-                // componentRestrictions: {country: "us"}
-            };
+    <!-- Owl Carousel js
+        ========================================================= -->
+    <script src="js/owl.carousel.min.js"></script>
 
-            var input = document.getElementById('autocomplete-input');
-            var autocomplete = new google.maps.places.Autocomplete(input, options);
-        }
+    <!-- Jquery nice select js 
+        ========================================================= -->
+    <script src="js/jquery.nice-select.min.js"></script>
 
-        // Autocomplete adjustment for homepage
-        if ($('.intro-banner-search-form')[0]) {
-            setTimeout(function () {
-                $(".pac-container").prependTo(".intro-search-field.with-autocomplete");
-            }, 300);
-        }
+    <!-- nivo slider js
+		========================================================= -->
+    <script src="lib/nivo-slider/js/jquery.nivo.slider.js"></script>
+    <script src="lib/nivo-slider/home.js"></script>
 
-    </script>
+    <!-- Js plugins included in this file
+		========================================================= -->
+    <script src="js/plugins.js"></script>
 
-    <!-- Google API -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g&libraries=places&callback=initAutocomplete"></script>
+    <!-- Video Player JS
+		========================================================= -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+
+    <!-- AJax Mail JS
+		========================================================= -->
+    <script src="js/ajax-mail.js"></script>
+
+    <!-- Mail Chimp JS
+		========================================================= -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Waypoint Js
+		========================================================= -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- Main js file contents all jQuery plugins activation
+		========================================================= -->
+    <script src="js/main.js"></script>
 
 </body>
 
