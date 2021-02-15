@@ -1,14 +1,17 @@
 import { ConnectionPool } from "mssql";
-const config = {
-  user: "sa",
-  password: "123",
-  server: "127.0.0.1",
-  database: "crudnode",
+const config = { 
+  /*user: "sa",
+  password: "123",*/
+  server: "pruebasnextu.database.windows.net",
+  user: "prueba",
+  password: "Pk2pk2pk2$",
+ 
+  database: "bd_referidos",
   options: {
     trustedconnection: true,
     enableArithAbort: true,
     instancename: "SQLEXPRESS",
-    encrypt: false,
+    encrypt: true,
   },
   port: 1433,
 };
