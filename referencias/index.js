@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = require("./app");
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        const app = new app_1.App(8080);
+        const app = new app_1.App();
         yield app.IniciarServidor();
     });
 }
