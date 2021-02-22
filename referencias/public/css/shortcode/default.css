@@ -34,6 +34,9 @@ Please do not change anything here! write in a custom.css file if required!
 /*************************
     01. General
 *************************/
+*{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: 'montserratbold';
     src: url('../../fonts/montserrat-bold-webfont.eot');

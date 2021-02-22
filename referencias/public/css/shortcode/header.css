@@ -275,8 +275,8 @@ ul.dropdown > li:hover > ul.inside-menu {
   overflow: hidden;
 }
 .mean-container .mean-nav > ul {
-  height: 278px;
-  overflow-y: scroll;
+  /*height: 278px;
+  overflow-y: scroll;*/
 }
 .mean-container .mean-nav ul li a:hover,.mean-container .mean-nav ul li:hover > a{
   color: #26ae61;
