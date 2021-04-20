@@ -12,8 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.conectarDb = void 0;
 const mssql_1 = require("mssql");
 const config = {
-    /*user: "sa",
-    password: "123",*/
     server: "pruebasnextu.database.windows.net",
     user: "prueba",
     password: "Pk2pk2pk2$",

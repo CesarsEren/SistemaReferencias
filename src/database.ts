@@ -1,7 +1,5 @@
 import { ConnectionPool } from "mssql";
-const config = { 
-  /*user: "sa",
-  password: "123",*/
+const config = {  
   server: "pruebasnextu.database.windows.net",
   user: "prueba",
   password: "Pk2pk2pk2$",

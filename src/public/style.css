@@ -913,12 +913,13 @@ p.panel-title {
     padding: 0;
 }
 .modal {
-  background: rgba(0, 0, 0, 0) url("images/bg/login.jpg") no-repeat scroll center center / cover ;
+ /* background: rgba(0, 0, 0, 0) url("images/bg/login.jpg") no-repeat scroll center center / cover ;*/
   z-index: 99999;
 }
+ 
 .modal-dialog {
   bottom: 0;
-  color: #ffffff;
+  /*color: #ffffff;*/
   height: 432px;
   left: 0;
   margin: auto;
@@ -951,7 +952,7 @@ p.panel-title {
 }
 .modal-dialog button.close {
   background: green none repeat scroll 0 0;
-  color: #ffffff;
+  /*color: #ffffff;*/
   cursor: pointer;
   font-size: 18px;
   height: 28px;

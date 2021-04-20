@@ -9,7 +9,7 @@ import UsuarioController from "./routes/usuario.routes";
 
 //Views
 import ViewRoutes from "./views/views.routes";
-import DashBoardRoutes from "./views/viewsdashboard.routes";
+import DashBoardRoutes from "./views/viewsmenuempresa.routes";
 import PagesRoutes from "./views/viewspages.routes";
 
 export class App {
@@ -53,6 +53,7 @@ export class App {
     this.app.use(PagesRoutes);
 
     this.app.use(express.static(path.join(__dirname, "public")));
+
     this.app.use(function (req, res, next) {
       let session: any = req.session;
       res.status(404).render("404", {

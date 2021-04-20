@@ -22,7 +22,7 @@ const path = require("path");
 const usuario_routes_1 = __importDefault(require("./routes/usuario.routes"));
 //Views
 const views_routes_1 = __importDefault(require("./views/views.routes"));
-const viewsdashboard_routes_1 = __importDefault(require("./views/viewsdashboard.routes"));
+const viewsmenuempresa_routes_1 = __importDefault(require("./views/viewsmenuempresa.routes"));
 const viewspages_routes_1 = __importDefault(require("./views/viewspages.routes"));
 class App {
     constructor(port) {
@@ -55,7 +55,7 @@ class App {
     }
     views() {
         this.app.use(views_routes_1.default);
-        this.app.use(viewsdashboard_routes_1.default);
+        this.app.use(viewsmenuempresa_routes_1.default);
         this.app.use(viewspages_routes_1.default);
         this.app.use(express_1.default.static(path.join(__dirname, "public")));
         this.app.use(function (req, res, next) {

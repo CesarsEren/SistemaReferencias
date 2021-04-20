@@ -17,6 +17,9 @@ router.get("/login", (req, res) => {
         logeado: typeof session.user !== "undefined",
     });
 });
+router.get("/completa.tu.registro", (req, res) => {
+    res.render("completarregistro");
+});
 router.get("/registrar", (req, res) => {
     //res.sendFile(path.join(__dirname, "index.html"));
     let session = req.session;

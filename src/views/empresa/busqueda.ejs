@@ -1,0 +1,712 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home One || JobHere</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- All css files are included here
+        ============================================ -->
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- This core.css file contents all plugins css file
+        ============================================ -->
+    <!-- Nice select css
+        ============================================ -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- This core.css file contents all plugins css file
+        ============================================ -->
+    <link rel="stylesheet" href="css/core.css">
+
+    <!-- Theme shortcodes/elements style
+        ============================================ -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+
+    <!--  Theme main style
+        ============================================ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Color CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/plugins/color.css">
+
+    <!-- Responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!--Main Wrapper Start-->
+    <div class="as-mainwrapper">
+        <!--Header Area Start-->
+        <%- include('../partial/headerdashboard') %>
+            <!-- End of Header Area -->
+
+            <main style="background-color: #F7F5F5;">
+                <div class=" container pt-3 pb-3">
+                    <div class=" row">
+                        <div class="col-md-4">
+                            <div>
+                                <div class="card">
+                                    <div class="card-header bg-dark">
+                                        <div class="text-white h5"> Filtros</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control " id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="etiqueta de búsqueda">
+                                            </div>
+
+                                            <div class="form-group ">
+                                                <select class="nice-select w-100">
+                                                    <option value="">Freelancer</option>
+                                                    <option value="">Profesional</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group ">
+                                                <button class="btn btn-block btn-success">Iniciar búsqueda</button>
+                                            </div>
+                                        </form>
+                                        <hr>
+                                        <form action="">
+                                            <div class="pb-2 pt-2 mb-2 pl-2 w-100 bg-dark ">
+                                                <h5 class="text-white">Área</h5>
+                                            </div>
+
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Finanzas
+                                                </label>
+                                            </div>
+
+
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Sistemas
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                    Contabilidad
+                                                </label>
+                                            </div>
+
+                                        </form>
+                                        <form class="mt-2" action="">
+                                            <div class="pb-2 pt-2 mb-2 pl-2 w-100 bg-dark ">
+                                                <h5 class="text-white">Puesto o Cargo</h5>
+                                            </div>
+
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    BackEnd
+                                                </label>
+                                            </div>
+
+
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Analista
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                    FullStack
+                                                </label>
+                                            </div>
+
+                                        </form>
+
+                                        <form action="" class="mt-2">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="" id=" "
+                                                    placeholder="Nro de referencias">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 form-group ">
+                                                    <input type="date" class="form-control" name="" id="">
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <input type="date" class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <p>Favoritos <span class="badge badge-primary">1</span> </p>
+                                            </div>
+                                            <hr>
+                                            <hr>
+                                            <div class="form-group">
+                                                <button class="btn btn-block text-white btn-warning"> Nueva
+                                                    Busqueda</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">Búsqueda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                        role="tab" aria-controls="pills-profile" aria-selected="false">Favoritos
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="card p-2 mt-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h4>Cesars Pinedo Olivera</h4>
+                                                    <small class="text-gray">Analista Programador</small>
+                                                    <div>
+                                                        <img src="images/linkedin.png" alt="">
+                                                    </div>
+                                                    <hr>
+                                                    <small>cpinedo428@gmail.com</small>
+                                                </div>
+                                                <div class="col-md-4 d-flex justify-content-end align-items-end">
+                                                    <div>
+                                                        <div class="w-100 text-right mb-1">
+                                                            <label for="fav">Favorito</label>
+                                                            <input type="checkbox" id="fav">
+                                                        </div>
+                                                        <div class="row">
+                                                            <button class="btn btn-sm btn-info" data-toggle="modal"
+                                                                data-target="#modalperfil">Ver Perfil</button>
+                                                            <button class="btn btn-sm btn-info ml-2" data-toggle="modal"
+                                                                data-target="#modalcompartir">Compartir</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card p-2 mt-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h4>Cesars Pinedo Olivera</h4>
+                                                    <small class="text-gray">Analista Programador</small>
+                                                    <div>
+                                                        <img src="images/linkedin.png" alt="">
+                                                    </div>
+                                                    <hr>
+                                                    <small>cpinedo428@gmail.com</small>
+                                                </div>
+                                                <div class="col-md-4 d-flex justify-content-end align-items-end">
+                                                    <div>
+                                                        <div class="w-100 text-right mb-1">
+                                                            <label for="fav">Favorito</label>
+                                                            <input type="checkbox" id="fav">
+                                                        </div>
+                                                        <div class="row">
+                                                            <button class="btn btn-sm btn-info" data-toggle="modal"
+                                                                data-target="#modalperfil">Ver Perfil</button>
+                                                            <button class="btn btn-sm btn-info ml-2" data-toggle="modal"
+                                                                data-target="#modalcompartir">Compartir</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card p-2 mt-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h4>Cesars Pinedo Olivera</h4>
+                                                    <small class="text-gray">Analista Programador</small>
+                                                    <div>
+                                                        <img src="images/linkedin.png" alt="">
+                                                    </div>
+                                                    <hr>
+                                                    <small>cpinedo428@gmail.com</small>
+                                                </div>
+                                                <div class="col-md-4 d-flex justify-content-end align-items-end">
+                                                    <div>
+                                                        <div class="w-100 text-right mb-1">
+                                                            <label for="fav">Favorito</label>
+                                                            <input type="checkbox" id="fav">
+                                                        </div>
+                                                        <div class="row">
+                                                            <button class="btn btn-sm btn-info">Ver Perfil</button>
+                                                            <button class="btn btn-sm btn-info ml-2">Compartir</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card p-2 mt-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h4>Cesars Pinedo Olivera</h4>
+                                                    <small class="text-gray">Analista Programador</small>
+                                                    <div>
+                                                        <img src="images/linkedin.png" alt="">
+                                                    </div>
+                                                    <hr>
+                                                    <small>cpinedo428@gmail.com</small>
+                                                </div>
+                                                <div class="col-md-4 d-flex justify-content-end align-items-end">
+                                                    <div>
+                                                        <div class="w-100 text-right mb-1">
+                                                            <label for="fav">Favorito</label>
+                                                            <input type="checkbox" id="fav">
+                                                        </div>
+                                                        <div class="row">
+                                                            <button class="btn btn-sm btn-info">Ver Perfil</button>
+                                                            <button class="btn btn-sm btn-info ml-2">Compartir</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+
+                                    <div class="card p-2 mt-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h4>Cesars Pinedo Olivera</h4>
+                                                    <small class="text-gray">Analista Programador</small>
+                                                    <div>
+                                                        <img src="images/linkedin.png" alt="">
+                                                    </div>
+                                                    <hr>
+                                                    <small>cpinedo428@gmail.com</small>
+                                                </div>
+                                                <div class="col-md-4 d-flex justify-content-end align-items-end">
+                                                    <div>
+                                                        <div class="w-100 text-right mb-1">
+                                                            <label for="fav">Favorito</label>
+                                                            <input type="checkbox" id="fav">
+                                                        </div>
+                                                        <div class="row">
+                                                            <button class="btn btn-sm btn-info">Ver Perfil</button>
+                                                            <button class="btn btn-sm btn-info ml-2">Compartir</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+
+
+            <footer class="footer-area">
+
+                <div class="footer-top bg-opacity-dark-blue-90 ptb-60">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 pb-sm-30">
+                                <div class="subscribe-text">
+                                    <h3>Suscribete a las notificaciones</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="subscribe-form">
+                                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese tu nombre">
+                                    <input type="email" name="email" id="eamil" placeholder="Ingrese tu Correo">
+                                    <button>Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-widget-area ptb-80 pb-sm-30" id="contacto">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-26">Contáctanos</h3>
+                                    <span class="text-white mb-9"><i class="fa fa-phone"></i> +51 999 999 999 </span>
+                                    <span class="text-white mb-9"><i class="fa fa-envelope"></i>info@example.com</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-21"> Condiciones</h3>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Preguntas Frecuentes</a></li>
+                                        <li><a href="#">Términos y condiciones</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-md-4 d-lg-block">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-21">Privacidad</h3>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Política de privacidad</a></li>
+                                        <li><a href="#">Política de Cookies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End of Footer Widget-area-->
+                <!-- Start of Footer area -->
+                <div class="copyright-area text-center ptb-20">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="footer-text">
+                                    <span class="text-white block"> Copyright&copy; <a href="#">Jobhere</a>.All right
+                                        reserved.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer area -->
+    </div>
+    <!--End of Main Wrapper Area-->
+
+    <div class="modal fade" id="modalperfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="col-12 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-md-12 ">
+                                <h4>Cesars Pinedo Olivera</h4>
+                                <small class="text-dark">Analista Programador</small>
+                                <div>
+                                    <img src="images/linkedin.png" alt="">
+                                </div>
+                                <hr>
+                                <small class="text-dark">cpinedo428@gmail.com</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">Presentanción</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Trabajos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                        aria-controls="contact" aria-selected="false">Referencias</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <p class="text-dark p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sint eaque, placeat aliquam laborum quos, vel nihil fugiat ab accusamus voluptas
+                                        non, iure eveniet! Ipsam minima nihil cumque corrupti porro sunt!.</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                                    <div class="row">
+                                        <div class="col-6 p-2 mt-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <h6 class="col-6 text-dark">Título de trabajo</h6>
+                                                        <a class="col-6 text-right" href="">Ver Trabajo</a>
+                                                    </div>
+                                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Quod facilis at quasi. Omnis praesentium
+                                                        asperiores quasi maiores, est et minima.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-2 mt-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <h6 class="col-6 text-dark">Título de trabajo</h6>
+                                                        <a class="col-6 text-right" href="">Ver Trabajo</a>
+                                                    </div>
+                                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Quod facilis at quasi. Omnis praesentium
+                                                        asperiores quasi maiores, est et minima.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-2 mt-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <h6 class="col-6 text-dark">Título de trabajo</h6>
+                                                        <a class="col-6 text-right" href="">Ver Trabajo</a>
+                                                    </div>
+                                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Quod facilis at quasi. Omnis praesentium
+                                                        asperiores quasi maiores, est et minima.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-2 mt-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <h6 class="col-6 text-dark">Título de trabajo</h6>
+                                                        <a class="col-6 text-right" href="">Ver Trabajo</a>
+                                                    </div>
+                                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Quod facilis at quasi. Omnis praesentium
+                                                        asperiores quasi maiores, est et minima.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-2 mt-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <h6 class="col-6 text-dark">Título de trabajo</h6>
+                                                        <a class="col-6 text-right" href="">Ver Trabajo</a>
+                                                    </div>
+                                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Quod facilis at quasi. Omnis praesentium
+                                                        asperiores quasi maiores, est et minima.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="  mt-2">
+                                        <div class="card">
+                                            <div class="card-body">
+
+                                                <h6>Nombre de Empresa</h6>
+                                                <p class="ml-3 text-dark text-right">18/03/2021</p>
+
+                                                <small class="text-dark">Area-[puesto]</small>
+                                                <p class="text-dark"> <strong>Etapa-1</strong> Entrevista con RRHH</p>
+                                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit. Est perferendis laboriosam amet dolorem repellendus vel illum
+                                                    beatae iste, illo culpa!</p>
+                                                <button class="btn btn-sm btn-primary float-right" type="button"
+                                                    data-toggle="collapse" data-target="#collapseExample"
+                                                    aria-expanded="false" aria-controls="collapseExample">
+                                                    Pruebas
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body">
+                                                    <div class="row">
+                                                        <div class="col-4 p-2 mt-1">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <h6 class="col-6 text-dark">Título de trabajo
+                                                                        </h6>
+                                                                        <a class="col-6 text-right" href="">Ver
+                                                                            Trabajo</a>
+                                                                    </div>
+                                                                    <p class="text-dark">Lorem ipsum dolor sit amet
+                                                                        consectetur
+
+                                                                        asperiores quasi maiores, est et minima.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-2 mt-1">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <h6 class="col-6 text-dark">Título de trabajo
+                                                                        </h6>
+                                                                        <a class="col-6 text-right" href="">Ver
+                                                                            Trabajo</a>
+                                                                    </div>
+                                                                    <p class="text-dark">Lorem ipsum dolor sit amet
+                                                                        consectetur
+                                                                        asperiores quasi maiores, est et minima.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-2 mt-1">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <h6 class="col-6 text-dark">Título de trabajo
+                                                                        </h6>
+                                                                        <a class="col-6 text-right" href="">Ver
+                                                                            Trabajo</a>
+                                                                    </div>
+                                                                    <p class="text-dark">Lorem ipsum dolor sit amet
+                                                                        consectetur
+                                                                        asperiores quasi maiores, est et minima.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade  " id="modalcompartir" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="col-12 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-md-12 ">
+                                <h4>Cesars Pinedo Olivera</h4>
+                                <small class="text-dark">Analista Programador</small>
+                                <div>
+                                    <img src="images/linkedin.png" alt="">
+                                </div>
+                                <hr>
+                                <small class="text-dark">cpinedo428@gmail.com</small>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="pt-2">
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Ingrese correo">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="3" type="text" name="" id="" class="form-control"
+                                placeholder="mensaje"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery latest version
+		========================================================= -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap framework js
+		========================================================= -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
+
+    <!-- Owl Carousel js
+        ========================================================= -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Jquery nice select js 
+        ========================================================= -->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!-- nivo slider js
+		========================================================= -->
+    <script src="lib/nivo-slider/js/jquery.nivo.slider.js"></script>
+    <script src="lib/nivo-slider/home.js"></script>
+
+    <!-- Js plugins included in this file
+		========================================================= -->
+    <script src="js/plugins.js"></script>
+
+    <!-- Video Player JS
+		========================================================= -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+
+    <!-- AJax Mail JS
+		========================================================= -->
+    <script src="js/ajax-mail.js"></script>
+
+    <!-- Mail Chimp JS
+		========================================================= -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Waypoint Js
+		========================================================= -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- Main js file contents all jQuery plugins activation
+		========================================================= -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

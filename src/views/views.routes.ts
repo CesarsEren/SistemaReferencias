@@ -18,6 +18,11 @@ router.get("/login", (req, res) => {
   });
 });
 
+router.get("/completa.tu.registro", (req, res) => {
+  
+  res.render("completarregistro");
+});
+
 router.get("/registrar", (req, res) => {
   //res.sendFile(path.join(__dirname, "index.html"));
   let session: any = req.session;

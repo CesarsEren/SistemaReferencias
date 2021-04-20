@@ -1,0 +1,336 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home One || JobHere</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- All css files are included here
+        ============================================ -->
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- This core.css file contents all plugins css file
+        ============================================ -->
+    <!-- Nice select css
+        ============================================ -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- This core.css file contents all plugins css file
+        ============================================ -->
+    <link rel="stylesheet" href="css/core.css">
+
+    <!-- Theme shortcodes/elements style
+        ============================================ -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+
+    <!--  Theme main style
+        ============================================ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Color CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/plugins/color.css">
+
+    <!-- Responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .tipousuario {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!--Main Wrapper Start-->
+    <div class="as-mainwrapper">
+        <!--Header Area Start-->
+        <%- include('partial/headerregistro') %>
+            <!-- End of Header Area -->
+
+            <!-- Search Form Start -->
+            <div class=" pt-5 pb-5" id="inicio" style="background-image: url('../images/bg/fondo.png')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 col-lg-12 ml-auto mr-auto">
+                            <div class="job-search-content ">
+                                <div class="row">
+                                    <div class="col-md-10 col-xs-12">
+                                        <div class="card pt-3 pl-5 pr-5">
+                                            <div class="card-body">
+                                                <div class="single-job-content">
+                                                    <div class="title"><span>Termina tu registro</span></div>
+                                                    <div class="single-job-form">
+                                                        <div class="single-info mb-14 fix">
+                                                            <label for="f_name"
+                                                                class="uppercase pull-left m-0">Nombre</label>
+                                                            <div class="form-box fix">
+                                                                <input type="text" id="f_name" name="f_name"
+                                                                    placeholder="ingrese su nombre">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name"
+                                                                class="uppercase pull-left m-0">Paterno</label>
+                                                            <div class="form-box fix">
+                                                                <input type="text" id="f_name" name="f_name"
+                                                                    placeholder="ingrese su apellido paterno">
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name"
+                                                                class="uppercase pull-left m-0">Materno</label>
+                                                            <div class="form-box fix">
+                                                                <input type="text" id="f_name" name="f_name"
+                                                                    placeholder="ingrese su apellido materno">
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name"
+                                                                class="uppercase pull-left m-0">Correo</label>
+                                                            <div class="form-box fix">
+                                                                <input type="text" id="f_name" name="f_name"
+                                                                    placeholder="ingrese a correo">
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name"
+                                                                class="uppercase pull-left m-0">Contraseña</label>
+                                                            <div class="form-box fix">
+                                                                <input type="password" id="f_name" placeholder="*****">
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name" class="uppercase pull-left m-0">Tipo
+                                                                Documento</label>
+                                                            <div class="form-box fix">
+                                                                <select class="w-100">
+                                                                    <option value="">Selecciona Tipo de Documento
+                                                                    </option>
+                                                                    <option value="">DNI</option>
+                                                                    <option value="">CE</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name"
+                                                                class="uppercase pull-left m-0">Documento</label>
+                                                            <div class="form-box fix">
+                                                                <input type="text" id="f_name" name="f_name"
+                                                                    placeholder="Ingrese su número de documento">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name" class="uppercase pull-left m-0">Fecha
+                                                                Nacimiento</label>
+                                                            <div class="form-box fix">
+                                                                <input type="date" id="f_name" name="f_name">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="single-info pb-14">
+                                                            <label for="f_name" class="uppercase pull-left m-0">Tipo de
+                                                                Usuario</label>
+                                                            <div class="form-box fix">
+
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="card bg-success text-white tipousuario"
+                                                                            data-codigo="1">
+                                                                            <div class="card-header"> Empresa
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card tipousuario" data-codigo="2">
+                                                                            <div class="card-header">Profesional
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row pt-2">
+                                                                    <div class="col">
+                                                                        <div class="card tipousuario" data-codigo="3">
+                                                                            <div class="card-header">Freelancer
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="card tipousuario" data-codigo="4">
+                                                                            <div class="card-header">Oficio
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div id="addcampos">
+                                                            <div class="single-info pb-14">
+                                                                <label for="f_name"
+                                                                    class="uppercase pull-left m-0">LINKEDIN</label>
+                                                                <div class="form-box fix">
+                                                                    <input type="text" id="f_name" name="f_name"
+                                                                        placeholder="Ingrese la url de su perfil de linkedin">
+                                                                </div>
+                                                            </div>
+                                                            <div class="single-info pb-14">
+                                                                <label for="f_name"
+                                                                    class="uppercase pull-left m-0">RUC</label>
+                                                                <div class="form-box fix">
+                                                                    <input type="text" id="f_name" name="f_name"
+                                                                        placeholder="ingrese ruc">
+                                                                </div>
+                                                            </div>
+                                                            <div class="single-info pb-14">
+                                                                <label for="f_name"
+                                                                    class="uppercase pull-left m-0">Razón
+                                                                    Social</label>
+                                                                <div class="form-box fix">
+                                                                    <input type="text" id="f_name" name="f_name"
+                                                                        placeholder="Ingrese la razón social">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-info fix">
+                                                            <div class="desc fix float-right">
+                                                                <div class="resubtn mt-40">
+                                                                    <a href="#" class="button button-medium-box">
+                                                                        REGISTRO </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--div class="col-md-2 d-flex align-items-center">
+
+                                        <div class="text-center">
+                                            <h4 class="text-white">Se parte de la plataforma con mejores referencias
+                                            </h4>
+                                        </div>
+
+                                    </div-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Form End -->
+
+
+            <footer>
+                <div class="copyright-area text-center ptb-20">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="footer-text">
+                                    <span class="text-white block"> Copyright&copy; <a href="#">Jobhere</a>.All right
+                                        reserved.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <!--End of Main Wrapper Area-->
+
+
+    <!-- jquery latest version
+		========================================================= -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap framework js
+		========================================================= -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
+
+    <!-- Owl Carousel js
+        ========================================================= -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Jquery nice select js 
+        ========================================================= -->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!-- nivo slider js
+		========================================================= -->
+    <script src="lib/nivo-slider/js/jquery.nivo.slider.js"></script>
+    <script src="lib/nivo-slider/home.js"></script>
+
+    <!-- Js plugins included in this file
+		========================================================= -->
+    <script src="js/plugins.js"></script>
+
+    <!-- Video Player JS
+		========================================================= -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+
+    <!-- AJax Mail JS
+		========================================================= -->
+    <script src="js/ajax-mail.js"></script>
+
+    <!-- Mail Chimp JS
+		========================================================= -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Waypoint Js
+		========================================================= -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- Main js file contents all jQuery plugins activation
+		========================================================= -->
+    <script src="js/main.js"></script>
+    <script>
+
+        $(".tipousuario").on("click", function () {
+            $(".tipousuario").removeClass("text-white").removeClass("bg-success");
+
+            var codigo = $(this).data("codigo");
+            if (codigo !=1 ) {
+                $("#addcampos").css("display", "none");
+            } else {
+                $("#addcampos").css("display", "block");
+            }
+
+            $(this).addClass("text-white").addClass("bg-success");
+        })
+
+    </script>
+</body>
+
+</html>
