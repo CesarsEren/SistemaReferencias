@@ -927,7 +927,7 @@ p.panel-title {
   right: 0;
   text-align: left;
   top: 0;
-  width: 465px;
+  /*width: 465px;*/
 }
 .modal-dialog.register{height: 555px}
 .modal-body {padding: 0}
