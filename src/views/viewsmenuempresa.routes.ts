@@ -10,7 +10,7 @@ router.get("/busqueda", (req, res) => {
   let session: any = req.session;
   //dashboard
   //if (typeof session.user !== "undefined") {
-  res.render("empresa/busqueda", {
+  res.render("viempresa/busqueda", {
     logeado: typeof session.user !== "undefined",
   });
   /*} else {
@@ -22,7 +22,7 @@ router.get("/historial-busqueda", (req, res) => {
   let session: any = req.session;
   //dashboard
   //if (typeof session.user !== "undefined") {
-  res.render("empresa/historialbusqueda", {
+  res.render("viempresa/historialbusqueda", {
     logeado: typeof session.user !== "undefined",
   });
   /*} else {
@@ -34,7 +34,7 @@ router.get("/solicitudes-referencia", (req, res) => {
   let session: any = req.session;
   //dashboard
   //if (typeof session.user !== "undefined") {
-  res.render("empresa/solicitudesreferencia", {
+  res.render("viempresa/lista-solicitud-referencia", {
     logeado: typeof session.user !== "undefined",
   });
   /*} else {

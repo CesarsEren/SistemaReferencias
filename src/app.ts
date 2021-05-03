@@ -9,7 +9,8 @@ import UsuarioController from "./routes/usuario.routes";
 
 //Views
 import ViewRoutes from "./views/views.routes";
-import DashBoardRoutes from "./views/viewsmenuempresa.routes";
+import EmpresaRoutes from "./views/viewsmenuempresa.routes";
+import UsuarioRoutes from "./views/viewsmenuusuario.routes";
 import PagesRoutes from "./views/viewspages.routes";
 
 export class App {
@@ -48,10 +49,11 @@ export class App {
     this.app.use("/usuarios", UsuarioController);
   }
   views() {
-    this.app.use(ViewRoutes);
-    this.app.use(DashBoardRoutes);
-    this.app.use(PagesRoutes);
 
+    this.app.use(ViewRoutes);
+    this.app.use(EmpresaRoutes);
+    this.app.use(UsuarioRoutes);
+    this.app.use(PagesRoutes); 
     this.app.use(express.static(path.join(__dirname, "public")));
 
     this.app.use(function (req, res, next) {
