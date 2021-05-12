@@ -160,31 +160,27 @@
                                                                 Usuario</label>
                                                             <div class="form-box fix">
 
-                                                                <div class="row">
-                                                                    <div class="col">
-                                                                        <div class="card bg-success text-white tipousuario"
-                                                                            data-codigo="1">
-                                                                            <div class="card-header"> Empresa
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+
+                                                                <div class="row pt-2">
                                                                     <div class="col">
                                                                         <div class="card tipousuario" data-codigo="2">
                                                                             <div class="card-header">Profesional
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="row pt-2">
                                                                     <div class="col">
                                                                         <div class="card tipousuario" data-codigo="3">
                                                                             <div class="card-header">Freelancer
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+
+                                                                <div class="row pt-2">
                                                                     <div class="col">
-                                                                        <div class="card tipousuario" data-codigo="4">
-                                                                            <div class="card-header">Oficio
+                                                                        <div class="card bg-success text-white tipousuario"
+                                                                            data-codigo="1">
+                                                                            <div class="card-header"> Empresa
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -220,6 +216,29 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+                                                        <div class="single-info fix">
+                                                            <div class="desc fix float-right">
+                                                                <div class="resubtn mt-10">
+                                                                    <button type="button" data-toggle="modal"
+                                                                        data-target="#modalpreguntas"
+                                                                        class="button bg-dark button-medium-box">
+                                                                        Preguntas Propuestas </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="single-info fix">
+                                                            <div class="desc fix float-right">
+                                                                <div class="resubtn mt-10">
+                                                                    <button type="button" data-toggle="modal"
+                                                                        data-target="#modaltrabajos"
+                                                                        class="button bg-dark button-medium-box">
+                                                                        Trabajos Anteriores </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="single-info fix">
                                                             <div class="desc fix float-right">
                                                                 <div class="resubtn mt-40">
@@ -252,6 +271,60 @@
             <!-- Search Form End -->
 
 
+            <!-- Modal -->
+            <div class="modal  fade" id="modalpreguntas" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content p-2">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Preguntas Propuestas</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        
+                        
+                        <div class="modal-body">
+
+                            <ul>
+                                <li>¿Qué es lorem ipsum?</li>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </ul>
+
+
+
+
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modaltrabajos" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content p-2">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Trabajos Anteriores</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer>
                 <div class="copyright-area text-center ptb-20">
                     <div class="container">
@@ -321,7 +394,7 @@
             $(".tipousuario").removeClass("text-white").removeClass("bg-success");
 
             var codigo = $(this).data("codigo");
-            if (codigo !=1 ) {
+            if (codigo != 1) {
                 $("#addcampos").css("display", "none");
             } else {
                 $("#addcampos").css("display", "block");
